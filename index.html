@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\materialize.min.css">
+    <link rel="stylesheet" href="assets/css/font/material-icons.css">
+    <title>Converter</title>
+
+    <style>
+                    body {
+                display: flex !important;
+                min-height: 100vh !important;
+                flex-direction: column !important;
+            }
+
+            main {
+                flex: 1 0 auto !important;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+           <nav class="nav-wrapper ">
+               <div class="container">
+                  <h4>TEMPERATURE CONVERTER</h4> 
+               </div>
+            </nav> 
+        </div>
+    </header>
+
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <div class="container">
+            <h5>FARENHEIT TO CELSIUS</h5>
+            <div class="row">
+                <div class="col s6 l6">
+                   <input type="number" id="FarToCel1">
+                    <label for="FarToCel1"> Farenheit</label>
+                    <br>
+                    <button onclick="FtoC()" >Convert</button>  
+                </div>
+
+                <div class="col s6 l6">            
+                    <input type="number" id="FarToCel2">
+                    <label for="FarToCel2"> Celsuis</label>
+                 </div>
+            </div>
+            <br>
+        </div>
+    
+
+    <br>
+    <div class="container">
+        <h5>CELSIUS TO FARENHEIT </h5>
+        <div class="row">
+            <div class="col s6 l6">
+               <input type="number" id="CelToFar1">
+                <label for="CelToFar1"> Celsuis </label> 
+                <br>
+                <button onclick="CtoF()">Convert</button> 
+            </div>
+            <div class="col s6 l6">            
+                <input type="number" id="CelToFar2">
+                <label for="CelToFar2">Farenheit</label>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        
+    
+    <footer class="page-footer">
+        <div class="footer-copyright grey darken-4 center">
+        <div class="container white-text">
+           <p> Designed by A.T.F</p> 
+        </div>
+        
+        </div>
+    </footer>
+    <script src="assets/js/converter.js"></script>
+    <script src=" assets/js/materialize.min.js" ></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
